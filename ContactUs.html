@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Hub</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+
+      /* Global Styles */
+      body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color:transparent ;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8rem;
+            margin: 0;
+            color: #00bcd4;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        .contact-button {
+            background-color: #00bcd4;
+            color: #121212;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .contact-button:hover {
+            background-color: #008c9e;
+        }
+
+
+
+    .contact-us {
+    background-color: #1e1e1e;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #00bcd4;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us p {
+    color: #d0d0d0;
+    font-family: Arial, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-family: 'Roboto', sans-serif;
+    color: #d0d0d0;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #808080;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #008c9e;
+}
+
+.submit-button {
+    background-color: #00bcd4;
+    color: #121212;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #008c9e;
+}
+
+
+footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            color: #808080;
+            margin: 0;
+        }
+
+        .social-links a {
+            color: #00bcd4;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #008c9e;
+        }
+
+        form label, form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        form input, form textarea {
+            padding: 0.5rem;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: 1px solid #00bcd4;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #00bcd4;
+            color: #121212;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #008c9e;
+        }
+
+</style>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Coding Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="contact-button">Get In Touch</a>
+    </header>
+
+
+<!-- Conatct Us Fom -->
+<section id="contact-us" class="contact-us">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feedback, or suggestions, feel free to reach out to us!</p>
+    <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 Coding Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
